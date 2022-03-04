@@ -5,9 +5,9 @@ cell = sheet.cell(row=1, column=2)
 Dict = {}
 print(cell.value)
 
-# Write value to cell in Excel
-sheet.cell(row=2, column=2).value = "Vikash"
-print(sheet.cell(row=2, column=2).value)
+# # Write value to cell in Excel
+# sheet.cell(row=2, column=2).value = "Vikash"
+# print(sheet.cell(row=2, column=2).value)
 
 print(sheet.max_row, sheet.max_column)
 print(sheet["A4"].value)
