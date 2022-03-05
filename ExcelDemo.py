@@ -20,3 +20,12 @@ for i in range(1, sheet.max_row+1):
             # print(c.value, end=" ")
         # print()
 print(Dict)
+
+for i in range(1, sheet.max_row+1):
+    if sheet.cell(row=i, column=1).value == "testcase3":
+        for j in range(2, sheet.max_column+1):
+            c = sheet.cell(row=i, column=j)
+            Dict[sheet.cell(row=1, column=j).value] = c.value
+            # print(c.value, end=" ")
+        # print()
+print(Dict)
